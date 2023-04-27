@@ -7,6 +7,14 @@
   min-height: 100vh;
 }
 
+.title{
+  color: aqua;
+  text-align: center;
+}
+
+.text{
+  color: red;
+}
 .description {
   display: inherit;
   justify-content: inherit;
