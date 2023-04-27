@@ -1,5 +1,5 @@
-export default function handler(req, res) {
-  res.status(200).json(
+export default async function handler(req, res) {
+  const data = [
     {
       id: 1,
       name: "Suraj Basnet",
@@ -38,18 +38,6 @@ export default function handler(req, res) {
     },
 
     {
-      id: 3,
-      name: "Manoj Basnet",
-      phone: "98123456789",
-      email: "rewanthapa@gmail.com",
-      references: "Non User",
-      technology: "DevOps",
-      salaryExpectation: "Above 50000",
-      level: "Mid",
-      status: "Hired",
-      experience: "5 year",
-    },
-    {
       id: 4,
       name: "Sushmita Thapa",
       phone: "9814455771",
@@ -87,6 +75,7 @@ export default function handler(req, res) {
       status: "BlackListed",
       experience: "1 year",
     },
+
     {
       id: 7,
       name: "Neta Pathak",
@@ -112,6 +101,7 @@ export default function handler(req, res) {
       status: "Hired",
       experience: "5 year",
     },
+
     {
       id: 9,
       name: "Smith Malla",
@@ -124,7 +114,6 @@ export default function handler(req, res) {
       status: "Hired",
       experience: "3 year",
     },
-
     {
       id: 10,
       name: "Kamal Magar",
@@ -136,6 +125,8 @@ export default function handler(req, res) {
       level: "Junior",
       status: "Hired",
       experience: "1 year",
-    }
-  );
+    },
+  ];
+
+  res.status(200).json(data);
 }
